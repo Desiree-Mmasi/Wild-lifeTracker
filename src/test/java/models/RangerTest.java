@@ -14,7 +14,7 @@ public class RangerTest {
     @Test
     public void newRanger_ObjectGetsCorrectlyCreated()
             throws Exception{
-        Ranger ranger = new Ranger("John", "NorthWest");
+        Ranger ranger = new Ranger("John",7,7390213,"NorthWest");
         assertEquals(true, ranger instanceof Ranger);
     }
     @After
