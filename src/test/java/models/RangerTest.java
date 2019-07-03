@@ -20,4 +20,10 @@ public class RangerTest {
     @After
     public void tearDown () throws Exception {
     }
+    @Test
+    public void newSightings_ObjectGetsCorrectlyCreated()
+            throws Exception{
+        Sightings sightings = new Sightings("NorthWest", "Our Pride Lies here!!");
+        assertEquals(true, sightings instanceof Sightings);
+    }
 }
