@@ -19,5 +19,11 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(new HashMap(), "index.hbs");
         }, new HandlebarsTemplateEngine());
+
+
+        get("/ranger",(request, response) -> {
+            Map<String,Object> model = new HashMap<>();
+            return new ModelAndView(new HashMap(), "Ranger.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
