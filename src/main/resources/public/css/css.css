@@ -33,6 +33,11 @@ a{
 
 .form{
     background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjbmYTH2JjjAhVMJBoKHZoNCScQjRx6BAgBEAU&url=http%3A%2F%2Fwww.renegadetribune.com%2Fnature-the-beginning%2F&psig=AOvVaw0AHbe0aeuxAI8TTOdwJfSv&ust=1562241286134280");
+    margin-top: -30vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .form-dark .font-small {
