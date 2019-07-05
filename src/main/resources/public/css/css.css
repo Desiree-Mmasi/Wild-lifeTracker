@@ -5,6 +5,7 @@
 
 }
 body{
+    margin: 0;
 }
 .navbar{
     z-index: 10;
@@ -100,4 +101,16 @@ transform: rotate(40deg);
 -webkit-transform-origin: 100% 100%;
 -ms-transform-origin: 100% 100%;
 transform-origin: 100% 100%;
+}
+
+#sighting{
+    background-color: #00c851;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    position: relative;
+    margin: -9px;
+    margin-left: -10px;
+    margin-right: -10px;
 }

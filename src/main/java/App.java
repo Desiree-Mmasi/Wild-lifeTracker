@@ -49,9 +49,17 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
-        get("/sighting", (request, response) -> {
+        get("/sightings", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return new ModelAndView(new HashMap(), "Sightings.hbs");
         }, new HandlebarsTemplateEngine());
+
+
+        get("/feedback", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(new HashMap(), "Feedback.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
     }
 }
