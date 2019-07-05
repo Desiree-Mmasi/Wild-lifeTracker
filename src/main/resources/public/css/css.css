@@ -106,11 +106,11 @@ transform-origin: 100% 100%;
 #sighting{
     background-color: #00c851;
     background-repeat: no-repeat;
-    background-size: cover;
     width: auto;
-    height: 700px;
+    height: 1000px;
     position: relative;
     margin: -9px;
     margin-left: -10px;
     margin-right: -10px;
 }
+
