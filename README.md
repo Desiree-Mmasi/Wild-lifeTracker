@@ -1,5 +1,5 @@
 # Wild-life Tracker
-#### This is an application that will enable the user in which I had in mind a ranger who will be able to gain the statistics of the Park He/She is working on concerning the Wildlife coverage and how He/She can manouver around.
+ This is an application that will enable the user in which I had in mind a ranger who will be able to gain the statistics of the Park He/She is working on concerning the Wildlife coverage and how He/She can manouver around.
 
 ## BDD
 
