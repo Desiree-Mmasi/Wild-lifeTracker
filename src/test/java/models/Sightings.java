@@ -52,10 +52,21 @@ public class Sightings {
     }
     public String getAnimalName() {
         try(Connection con = DB.sql2o.open()) {
-            return con.createQuery("SELECT name FROM species WHERE id=:id")
+            return con.createQuery("SELECT name FROM sightings WHERE id=:id")
                     .addParameter("id", this.animalId)
                     .executeAndFetchFirst(String.class);
         }
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Sightings)) return false;
+        Sightings sightings = (Sightings) o;
+        return getId() == sightings.getId() &&
+                getRangerId() == sightings.getRangerId() &&
+                getAnimalId() == sightings.getAnimalId() &&
+                getLocation().equals(sightings.getLocation()) &&
+                getDate().equals(sightings.getDate());
     }
 
     public void save(){

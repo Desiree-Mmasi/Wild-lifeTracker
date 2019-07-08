@@ -30,11 +30,11 @@ public class App {
 
         post("/done", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            ArrayList<Ranger> ranger =request.session().attribute("ranger");
-            if (ranger==null) {
-                ranger= new ArrayList<Ranger>();
-                request.session().attribute("ranger",ranger);
-            }
+//            ArrayList<Ranger> ranger =request.session().attribute("ranger");
+//            if (ranger==null) {
+//                ranger= new ArrayList<Ranger>();
+//                request.session().attribute("ranger",ranger);
+//            }
             String inputtedRanger = request.queryParams("name");
             String  inputtedNumber = request.queryParams("number");
             int number =    Integer.parseInt(inputtedNumber);
@@ -43,8 +43,9 @@ public class App {
             String inputtedSighting = request.queryParams("site");
 
             Ranger named = new Ranger(inputtedRanger, number, contact, inputtedSighting);
-            ranger.add(named);
-            model.put("hero", named);
+//            ranger.add(named);
+            named.save();
+            model.put("ranger", named);
             return new ModelAndView(model, "Ranger.hbs");
         }, new HandlebarsTemplateEngine());
 
