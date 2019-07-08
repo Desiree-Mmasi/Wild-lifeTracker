@@ -60,6 +60,15 @@ public class App {
             return new ModelAndView(new HashMap(), "Feedback.hbs");
         }, new HandlebarsTemplateEngine());
 
+        get("/species", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(new HashMap(), "Species.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/form", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(new HashMap(), "Sightingsform.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }

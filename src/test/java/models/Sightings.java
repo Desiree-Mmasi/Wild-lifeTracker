@@ -42,6 +42,7 @@ public class Sightings {
     }
 
 
+
     public String getRangerName() {
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery("SELECT name FROM rangers WHERE id=:id")
