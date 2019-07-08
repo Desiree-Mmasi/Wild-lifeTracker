@@ -21,8 +21,8 @@ public class RangerTest {
     @Test
     public void newSightings_ObjectGetsCorrectlyCreated()
             throws Exception{
-        Sightings sightings = new Sightings("NorthWest", "Our Pride Lies here!!");
-        assertEquals(true, sightings instanceof Sightings);
+        App.Sightings sightings = new App.Sightings("NorthWest", "Our Pride Lies here!!");
+        assertEquals(true, sightings instanceof App.Sightings);
     }
     @Test
     public void newFeedback_ObjectGetsCorrectlyCreated()
