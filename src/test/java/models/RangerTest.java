@@ -30,6 +30,12 @@ public class RangerTest {
         Feedback feedback = new Feedback("Des", "Response", "Submit");
         assertEquals(true, feedback instanceof Feedback);
     }
+    @Test
+    public void newSpecies_ObjectGetsCorrectlyCreated()
+        throws Exception{
+        Species species = new Species("Tiger", "Endangered");
+        assertEquals(true, species instanceof Species);
+    }
     @After
     public void tearDown () throws Exception {
     }
