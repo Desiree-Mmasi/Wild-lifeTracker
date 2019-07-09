@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+
 import static org.junit.Assert.*;
 
 public class RangerTest {
@@ -14,15 +15,15 @@ public class RangerTest {
     @Test
     public void newRanger_ObjectGetsCorrectlyCreated()
             throws Exception{
-        Ranger ranger = new Ranger("John",7,7390213,"NorthWest");
+        Ranger ranger = new Ranger("John","Male",13,758913903);
         assertEquals(true, ranger instanceof Ranger);
     }
 
     @Test
     public void newSightings_ObjectGetsCorrectlyCreated()
             throws Exception{
-        App.Sightings sightings = new App.Sightings("NorthWest", "Our Pride Lies here!!");
-        assertEquals(true, sightings instanceof App.Sightings);
+        Sightings sightings = new Sightings("NorthWest", "Our Pride Lies here!!");
+        assertEquals(true, sightings instanceof Sightings);
     }
     @Test
     public void newFeedback_ObjectGetsCorrectlyCreated()
@@ -33,7 +34,7 @@ public class RangerTest {
     @Test
     public void newSpecies_ObjectGetsCorrectlyCreated()
         throws Exception{
-        Species species = new Species("Tiger", "Endangered");
+        Species species = new Species("Tiger", "Endangered","Healthy");
         assertEquals(true, species instanceof Species);
     }
     @After

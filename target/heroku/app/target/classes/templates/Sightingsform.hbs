@@ -1,0 +1,49 @@
+{{#partial "content"}}
+    <div class="sightingsform">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6 ">
+                    <br> <br>
+                    <h1 style="font-family: 'Poiret One', cursive; font-size:70px;"><strong>Add Sighting</strong>
+                    </h1>
+
+                    <form action='/site' method="post">
+
+
+                        <div class="form-group ranger">
+                            <label for="ranger"
+                                   style="font-family: 'Poiret One', cursive;font-size:20px;color:white;"><strong> Ranger
+                                Id: </strong></label>
+                            <input id="name" name="name" class="form-control" type="text" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="gender"
+                                   style="font-family: 'Poiret One', cursive;font-size:20px;color:white;"><strong>Animal
+                                Id:</strong></label>
+                            <input id="animal" name="animal" class="form-control" type="text" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="badge"
+                                   style="font-family: 'Poiret One', cursive;font-size:20px; color:white;"><strong>Location:
+                            </strong></label>
+                            <input id="location" name="location" class="form-control" type="text" required>
+                        </div>
+
+
+                        <br> <br>
+                        <button type="submit" class="btn btn-success">Sighting Added</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+{{/partial}}
+{{>layout.hbs}}

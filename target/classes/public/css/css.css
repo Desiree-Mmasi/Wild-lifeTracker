@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+}
+.navbar{
+    z-index: 10;
+}
+.land-page{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    max-height: 100vh;
+}
+.h3-responsive{
+    margin-top: -30vh;
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+
+}
+a{
+    color: black;
+    text-shadow: 0 0 10px white;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+}
+
+.form{
+    background-image:
+            url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjbmYTH2JjjAhVMJBoKHZoNCScQjRx6BAgBEAU&url=http%3A%2F%2Fwww.renegadetribune.com%2Fnature-the-beginning%2F&psig=AOvVaw0AHbe0aeuxAI8TTOdwJfSv&ust=1562241286134280");
+    margin-top: -30vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+#sighting{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    min-height: 150vh;
+    background-color: limegreen;
+}
+.card-bundle{
+    margin-top: 100px;
+}
+
+.feedback{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    max-height: 100vh;
+}
+
+.ranger{
+    background-color:limegreen;
+}
+.species{
+    background-color:limegreen;
+}
+.sightingsform{
+    background-color:limegreen;
+}
+.small{
+    width:350px;
+    max-height: border-box;
+    display: inline-block;
+    background-color: antiquewhite;
+}
+.sight{
+    width:350px;
+    max-height: border-box;
+    display: inline-block;
+}
+.insight {
+    background-color: brown;
+}
+
+.animal{
+    width:350px;
+    max-height: border-box;
+    display: inline-block;
+    background-color: brown;
+}
+
+.page{
+    background-color: brown;
+}

@@ -1,0 +1,90 @@
+{{#block "header"}}
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>{{#block "title"}}Wildlife{{/block}}
+        </title>
+
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+        <link href="/css/css.css" rel="stylesheet">
+    </head>
+
+    <body>
+{{/block}}
+
+<nav class="mb-1 navbar navbar-expand-lg ">
+    <a class="navbar-brand value " href="#"><strong>Ole Sereni</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-444"
+            aria-controls="navbarSupportedContent-444" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ranger">Register as a Ranger</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sightings">Sightings</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Dropdown
+                </a>
+                <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                    <a class="dropdown-item" href="species">Add Species</a>
+                    <a class="dropdown-item" href="home">Take a tour</a>
+                    <a class="dropdown-item" href="form">Add Sightings</a>
+                    <a class="dropdown-item" href="feedback">Send us your Feedback!</a>
+
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container-fluid">
+    {{#block "content"}}
+    {{/block}}
+
+</div>
+
+{{#block "footer"}}
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
+    </body>
+
+    </html>
+{{/block}}

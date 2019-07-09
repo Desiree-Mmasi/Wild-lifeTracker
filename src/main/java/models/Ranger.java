@@ -20,6 +20,9 @@ public class Ranger {
         this.rangerSighting = mSite;
     }
 
+    public Ranger (String john, String male, int i, int i1) {
+    }
+
     public int getId () {
         return id;
     }
